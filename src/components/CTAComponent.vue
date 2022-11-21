@@ -3,9 +3,11 @@
     <div
       class="my-container text-white d-flex justify-content-between align-items-center"
     >
-      <div class="cta">How to Enroll Your Child to a Class?</div>
+      <div class="cta">{{ cta.text }}</div>
 
-      <button>Learn more <i class="fa-solid fa-angle-right ps-2"></i></button>
+      <button>
+        {{ cta.btn }} <i class="fa-solid fa-angle-right ps-2"></i>
+      </button>
     </div>
   </div>
 </template>
@@ -13,6 +15,9 @@
 <script>
 export default {
   name: "CTAComponent",
+  props: {
+    cta: Object,
+  },
 };
 </script>
 
@@ -34,9 +39,5 @@ button {
 
 .cta {
   font-size: 1.5rem;
-}
-.purple-bg {
-  background-color: $butterfly;
-  height: 90px;
 }
 </style>

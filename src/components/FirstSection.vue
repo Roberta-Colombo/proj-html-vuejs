@@ -1,12 +1,6 @@
 <template>
-  <div class="my-container">
-    <!-- titolo + sub + deco<br />
-    section divisa in due col -->
-    <div class="main-title text-center pb-5">
-      <div class="title">Welcome to Fable</div>
-      <div class="subtitle">Fable daycare, preschool and kindergarten</div>
-      <img src="../assets/img_unzip/header_divider.png" alt="Decoration" />
-    </div>
+  <div class="my-container mb-5">
+    <SectionTitle :section="store.sections.sectionOne" />
 
     <!-- main content diviso in due colonne uguali (50%). A sua volta ogni colonna contiene due colonne annidate -->
 
@@ -93,8 +87,17 @@
 </template>
 
 <script>
+import { store } from "../store";
+import SectionTitle from "./SectionTitle.vue";
+
 export default {
-  name: "WhiteSection",
+  name: "FirstSection",
+  components: { SectionTitle },
+  data() {
+    return {
+      store,
+    };
+  },
 };
 </script>
 
@@ -102,16 +105,6 @@ export default {
 @use "../assets/style/partials/variables" as *;
 .my-container {
   height: 600px;
-}
-.title {
-  color: $butterfly;
-  font-size: 2.5rem;
-  padding-top: 3rem;
-}
-
-.subtitle {
-  color: $subtitle;
-  padding-bottom: 1.3rem;
 }
 
 .circle {

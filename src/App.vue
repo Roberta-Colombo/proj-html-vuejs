@@ -6,22 +6,21 @@
     </header>
 
     <main>
-      <CTAComponent />
-      <WhiteSection />
+      <FirstSection />
       <GreySection />
-      <CTAComponent />
+      <!-- <CTAComponent /> -->
       <ParallaxComponent />
-      <WhiteSection />
+      <!-- <WhiteSection /> -->
       <FooterComponent />
     </main>
   </div>
 </template>
 
 <script>
-import CTAComponent from "./components/CTAComponent.vue";
+// import CTAComponent from "./components/CTAComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import JumboComponent from "./components/JumboComponent.vue";
-import WhiteSection from "./components/WhiteSection.vue";
+import FirstSection from "./components/FirstSection.vue";
 import GreySection from "./components/GreySection.vue";
 import ParallaxComponent from "./components/ParallaxComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
@@ -30,8 +29,7 @@ export default {
   components: {
     HeaderComponent,
     JumboComponent,
-    CTAComponent,
-    WhiteSection,
+    FirstSection,
     GreySection,
     ParallaxComponent,
     FooterComponent,
