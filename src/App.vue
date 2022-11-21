@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapperd debug">
+  <div class="wrapper">
     <header>
       <HeaderComponent />
       <JumboComponent />
