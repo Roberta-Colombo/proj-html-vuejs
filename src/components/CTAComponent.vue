@@ -25,7 +25,7 @@ export default {
 @use "../assets/style/partials/variables" as *;
 
 .my-container {
-  height: 90px;
+  height: 130px;
 }
 
 button {
@@ -33,11 +33,11 @@ button {
   border: 1px solid $sugarcane;
   background-color: transparent;
   color: $sugarcane;
-  font-size: 0.8rem;
-  padding: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.7rem;
 }
 
 .cta {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 </style>

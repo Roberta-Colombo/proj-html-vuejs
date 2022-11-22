@@ -4,10 +4,14 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+
 @import 'bootstrap/scss/bootstrap';
 
 .wrapper {
     background-color: $sugarcane;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .my-container {

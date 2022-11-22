@@ -144,7 +144,7 @@ export default {
   background-color: $blazeorange;
   text-align: center;
   line-height: 60px;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .circle img {
@@ -155,7 +155,7 @@ export default {
   color: $butterfly;
   font-weight: bold;
   font-size: 1.5rem;
-  padding: 2rem 1rem 1rem;
+  padding: 1.5rem 1rem 1rem;
 }
 
 .description {
