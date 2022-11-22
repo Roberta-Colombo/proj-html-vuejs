@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/img_unzip/gallery_01-690x506.jpg" alt="Kids drawing" />
+    <img src="../../public/img/gallery_01-690x506.jpg" alt="Kids drawing" />
     <img src="../assets/img_unzip/gallery_02-690x506.jpg" alt="Kids painting" />
     <img src="../assets/img_unzip/gallery_03-690x506.jpg" alt="Kid drawing" />
     <img src="../assets/img_unzip/gallery_04-690x506.jpg" alt="Kid playing" />

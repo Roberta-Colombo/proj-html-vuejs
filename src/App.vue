@@ -7,7 +7,7 @@
 
     <main>
       <FirstSection />
-      <GreySection />
+      <SecondSection />
       <!-- <CTAComponent /> -->
       <ParallaxComponent />
       <!-- <WhiteSection /> -->
@@ -21,7 +21,7 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import JumboComponent from "./components/JumboComponent.vue";
 import FirstSection from "./components/FirstSection.vue";
-import GreySection from "./components/GreySection.vue";
+import SecondSection from "./components/SecondSection.vue";
 import ParallaxComponent from "./components/ParallaxComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
@@ -30,7 +30,7 @@ export default {
     HeaderComponent,
     JumboComponent,
     FirstSection,
-    GreySection,
+    SecondSection,
     ParallaxComponent,
     FooterComponent,
   },
