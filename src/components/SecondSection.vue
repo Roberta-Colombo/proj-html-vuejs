@@ -5,14 +5,13 @@
         <div class="row pt-3 gx-0">
           <div class="col-6 ps-0">
             <!-- ulteriore divisione 50% delle due colonne precedentemente ottenute -->
-            <!-- <div class="row"> -->
             <!-- colonna sx -->
             <div class="d-flex">
               <button class="active-btn">Overview</button>
               <button>Our Mission</button>
             </div>
 
-            <div class="purpletxt description">
+            <div class="section-intro description">
               <strong
                 >Our philosophy is learning through play as we offer a
                 stimulating environment for children</strong
@@ -56,7 +55,6 @@
                 </div>
               </div>
             </div>
-            <!-- </div> -->
           </div>
 
           <!-- colonna dx (slider) -->
@@ -159,12 +157,12 @@ export default {
   font-size: 1.5rem;
   padding: 2rem 1rem 1rem;
 }
+
+.description {
+  padding: 2rem 1rem 2rem 0;
+}
 .caption {
   padding-left: 1rem;
-}
-.description {
-  padding: 2rem 0;
-  font-size: 1.5rem;
 }
 
 button {

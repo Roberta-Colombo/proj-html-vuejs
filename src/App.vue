@@ -8,7 +8,7 @@
     <main>
       <FirstSection />
       <SecondSection />
-      <!-- <CTAComponent /> -->
+      <ThirdSection />
       <ParallaxComponent />
       <!-- <WhiteSection /> -->
       <FooterComponent />
@@ -17,13 +17,13 @@
 </template>
 
 <script>
-// import CTAComponent from "./components/CTAComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import JumboComponent from "./components/JumboComponent.vue";
 import FirstSection from "./components/FirstSection.vue";
 import SecondSection from "./components/SecondSection.vue";
 import ParallaxComponent from "./components/ParallaxComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import ThirdSection from "./components/ThirdSection.vue";
 
 export default {
   components: {
@@ -33,6 +33,7 @@ export default {
     SecondSection,
     ParallaxComponent,
     FooterComponent,
+    ThirdSection,
   },
 };
 </script>
