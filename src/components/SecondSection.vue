@@ -133,9 +133,6 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/style/partials/variables" as *;
-.grey-bg {
-  background-color: $bonjour;
-}
 
 .circle {
   height: 65px;

@@ -73,6 +73,7 @@ img {
 
 .class-info {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .vertical-line {

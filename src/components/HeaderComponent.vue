@@ -69,7 +69,7 @@ export default {
 
 .header,
 nav {
-  height: 90px;
+  height: 130px;
 }
 
 .logo {
@@ -78,18 +78,18 @@ nav {
 
 li {
   list-style: none;
-  padding: 1.5rem;
+  padding: 2.2rem 1.5rem;
   text-align: center;
 }
 
 li img {
-  height: 40%;
-  padding-bottom: 0.1rem;
+  height: 65%;
+  padding-bottom: 0.6rem;
 }
 
 a {
   color: $mineshaft;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 </style>
