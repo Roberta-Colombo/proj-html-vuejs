@@ -15,7 +15,7 @@ $fa-font-path: '../webfonts';
 }
 
 .my-container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -30,15 +30,3 @@ $fa-font-path: '../webfonts';
     color: $butterfly;
 }
 
-// da cancellare
-.red {
-    background-color: rgb(237, 154, 154);
-}
-
-.purple {
-    background-color: rgb(131, 105, 131);
-}
-
-.debug {
-    border: 1px solid black;
-}
