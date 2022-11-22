@@ -11,7 +11,7 @@
       <ThirdSection />
       <FourthSection />
       <ParallaxComponent />
-      <!-- <WhiteSection /> -->
+      <FifthSection />
       <FooterComponent />
     </main>
   </div>
@@ -26,6 +26,7 @@ import ParallaxComponent from "./components/ParallaxComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import ThirdSection from "./components/ThirdSection.vue";
 import FourthSection from "./components/FourthSection.vue";
+import FifthSection from "./components/FifthSection.vue";
 
 export default {
   components: {
@@ -37,6 +38,7 @@ export default {
     FooterComponent,
     ThirdSection,
     FourthSection,
+    FifthSection,
   },
 };
 </script>

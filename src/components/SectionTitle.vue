@@ -26,7 +26,7 @@ export default {
 @use "../assets/style/partials/variables" as *;
 .title {
   color: $butterfly;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding-top: 3rem;
 }
 

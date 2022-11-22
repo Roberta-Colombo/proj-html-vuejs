@@ -59,4 +59,27 @@ export const store = reactive({
       image: "../public/img/class_04-690x506.jpg",
     },
   },
+  posts: {
+    first: {
+      date: "Ocober 03, 2014",
+      image: "../public/img/blog_09-300x180.jpg",
+      title: "Drawing and Painting Lessons",
+      author: "Anna Brown",
+      category: "Events, Fun",
+    },
+    second: {
+      date: "Ocober 03, 2014",
+      image: "../public/img/blog_10-300x180.jpg",
+      title: "Fall Parents Meeting Day",
+      author: "Anna Brown",
+      category: "Dance, Education",
+    },
+    third: {
+      date: "September 20, 2014",
+      image: "../public/img/blog_08-300x180.jpg",
+      title: "Birthday in Kindergarten",
+      author: "Anna Brown",
+      category: "Games, General",
+    },
+  },
 });
