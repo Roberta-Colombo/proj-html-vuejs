@@ -1,44 +1,49 @@
 <template>
-  <div class="debug">
-    <div class="red">
-      FOOTER <br />
-      MAPPA GOOGLE
+  <div class="map">
+    <a
+      href="https://www.google.com/maps/place/85+Fentiman+Ave,+Ottawa,+ON+K1S+0T7,+Canada/@45.3960648,-75.6779399,17.25z/data=!4m5!3m4!1s0x4cce05eea8246bff:0x697a8f8914c63460!8m2!3d45.3959237!4d-75.6766391"
+    >
+      <img
+        class="map-img"
+        src="../assets/img_unzip/google_map.png"
+        alt="Google map"
+      />
+    </a>
+  </div>
+
+  <div class="my-container py-3">
+    <SectionTitle :section="store.sections.contacts" />
+
+    <!-- contatti icone e info -->
+    <nav>
+      <ul class="d-flex justify-content-center">
+        <li v-for="(item, index) in footerLinks" :key="index">
+          <img :src="item.icon" :alt="item.text" />
+          <div class="title">{{ item.title }}</div>
+          <div class="info">{{ item.firstRow }}</div>
+          <div class="info">{{ item.secondRow }}</div>
+          <div class="info">{{ item.thirdRow }}</div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- form -->
+    <div class="row">
+      <div class="col-6">
+        <form action="">
+          <input type="text" placeholder="Your Name *" /><br />
+          <input type="text" placeholder="Your E-mail *" /><br />
+          <input type="text" placeholder="Subject" />
+        </form>
+      </div>
+
+      <div class="col-6">
+        <input class="text-area" type="text" placeholder="Your Message *" />
+      </div>
     </div>
 
-    <div class="my-container py-3">
-      <SectionTitle :section="store.sections.contacts" />
-
-      <!-- contatti icone e info -->
-      <nav>
-        <ul class="d-flex justify-content-center">
-          <li v-for="(item, index) in footerLinks" :key="index">
-            <img :src="item.icon" :alt="item.text" />
-            <div class="title">{{ item.title }}</div>
-            <div class="info">{{ item.firstRow }}</div>
-            <div class="info">{{ item.secondRow }}</div>
-            <div class="info">{{ item.thirdRow }}</div>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- form -->
-      <div class="row">
-        <div class="col-6">
-          <form action="">
-            <input type="text" placeholder="Your Name *" /><br />
-            <input type="text" placeholder="Your E-mail *" /><br />
-            <input type="text" placeholder="Subject" />
-          </form>
-        </div>
-
-        <div class="col-6">
-          <input class="text-area" type="text" placeholder="Your Message *" />
-        </div>
-      </div>
-
-      <div class="text-center my-3">
-        <button>send message</button>
-      </div>
+    <div class="text-center my-3">
+      <button>send message</button>
     </div>
   </div>
 </template>
@@ -129,5 +134,15 @@ button {
   text-transform: uppercase;
   border-style: none;
   padding: 0.6rem 1.3rem;
+}
+
+.map {
+  width: 100%;
+  height: 470px;
+}
+
+.map-img {
+  width: 100%;
+  height: 100%;
 }
 </style>
