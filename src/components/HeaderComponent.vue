@@ -34,10 +34,10 @@
 
                   <div class="list">
                     <li>
-                      <a href="#"> {{ item.bullet1 }}</a>
+                      <a href="#"> {{ item.bullet2 }}</a>
                     </li>
                     <li>
-                      <a href="#"> {{ item.bullet2 }}</a>
+                      <a href="#"> {{ item.bullet1 }}</a>
                     </li>
                   </div>
 
@@ -46,8 +46,12 @@
                       <a href="#"> {{ item.bullet1 }}</a>
                     </li>
                     <li>
-                      <a href="#"> {{ item.bullet2 }}</a>
+                      <a href="#"> {{ item.bullet3 }}</a>
                     </li>
+
+                    <!-- <li v-for="(listItem, index) in navLinks" :key="index">
+                      <a href="#">{{ listItem.bullets[index] }}</a>
+                    </li> -->
                   </div>
                 </ul>
               </div>
@@ -79,27 +83,27 @@ export default {
           icon2: "../../public/img/document-2.png",
           text: "Pages",
           url: "#",
-          bullet1: "Ipsum1",
-          bullet2: "Ipsum2",
-          bullet3: "Ipsum3",
+          bullet1: "House Rules",
+          bullet2: "Documentation",
+          bullet3: "Enrollment",
         },
         {
           icon: "../../public/img/printer.png",
           icon2: "../../public/img/printer-2.png",
           text: "Blog",
           url: "#",
-          bullet1: "Lorem ipsum1",
-          bullet2: "Lorem ipsum2",
-          bullet3: "Lorem ipsum3",
+          bullet1: "To the Articles",
+          bullet2: "Authors",
+          bullet3: "Categories",
         },
         {
           icon: "../../public/img/cart.png",
           icon2: "../../public/img/cart-2.png",
           text: "Shop",
           url: "#",
-          bullet1: "Ipsum1",
-          bullet2: "Ipsum2",
-          bullet3: "Ipsum3",
+          bullet1: "To the Shop",
+          bullet2: "Shipment",
+          bullet3: "Payment methods",
         },
         {
           icon: "../../public/img/lab.png",
@@ -115,18 +119,18 @@ export default {
           icon2: "../../public/img/chat-2.png",
           text: "Support",
           url: "#",
-          bullet1: "Ipsum1",
-          bullet2: "Ipsum2",
-          bullet3: "Ipsum3",
+          bullet1: "Contact us",
+          bullet2: "FAQs",
+          bullet3: "Virtual Assistant",
         },
         {
           icon: "../../public/img/envelope.png",
           icon2: "../../public/img/envelope-2.png",
           text: "Contact",
           url: "#",
-          bullet1: "Lorem ipsum1",
-          bullet2: "Lorem ipsum2",
-          bullet3: "Lorem ipsum3",
+          bullet1: "Address",
+          bullet2: "Phone and Email",
+          bullet3: "Opening Hours",
         },
       ],
     };

@@ -12,8 +12,11 @@
       <FourthSection />
       <ParallaxComponent />
       <FifthSection />
-      <FooterComponent />
     </main>
+
+    <footer>
+      <FooterComponent />
+    </footer>
   </div>
 </template>
 
