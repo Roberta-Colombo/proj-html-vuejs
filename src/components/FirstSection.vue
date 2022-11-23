@@ -117,7 +117,7 @@ export default {
 }
 
 .orange-circle {
-  background-color: $blazeorange;
+  background-color: $maincolor;
 }
 
 .purple-circle {

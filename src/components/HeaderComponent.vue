@@ -186,7 +186,7 @@ li:hover .hover-icon {
 }
 
 li:hover {
-  background-color: $blazeorange;
+  background-color: $maincolor;
 }
 
 .dropdown {
@@ -202,7 +202,7 @@ li:hover {
   z-index: 1000;
   left: 0;
   top: 130px;
-  border-bottom: 3px solid $blazeorange;
+  border-bottom: 3px solid $maincolor;
 }
 
 li:hover .dropdown-content {
@@ -219,7 +219,7 @@ li:hover .dropdown-content {
 }
 
 .list li a {
-  color: $blazeorange;
+  color: $maincolor;
   font-weight: 600;
 }
 

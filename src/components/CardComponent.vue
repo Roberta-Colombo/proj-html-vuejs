@@ -89,7 +89,7 @@ img {
 
 button {
   position: absolute;
-  background-color: $blazeorange;
+  background-color: $maincolor;
   color: $sugarcane;
   border-style: none;
   width: 130px;

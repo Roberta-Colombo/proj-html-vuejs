@@ -100,12 +100,12 @@ h1 {
 }
 
 .above-heading {
-  color: $blazeorange;
+  color: $maincolor;
   font-size: 2.7rem;
 }
 
 button {
-  background-color: $blazeorange;
+  background-color: $maincolor;
   color: $sugarcane;
   border-style: none;
   padding: 15px 15px;

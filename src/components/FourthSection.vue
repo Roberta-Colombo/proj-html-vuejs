@@ -109,7 +109,7 @@ li {
 .box {
   width: 18px;
   height: 18px;
-  border: 2px solid $blazeorange;
+  border: 2px solid $maincolor;
   padding: 3px;
   position: relative;
 }
@@ -120,7 +120,7 @@ i {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  color: $blazeorange;
+  color: $maincolor;
 }
 
 .circle {

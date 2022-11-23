@@ -130,7 +130,7 @@ input {
 
 button {
   color: $sugarcane;
-  background-color: $blazeorange;
+  background-color: $maincolor;
   text-transform: uppercase;
   border-style: none;
   padding: 0.6rem 1.3rem;

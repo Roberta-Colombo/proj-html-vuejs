@@ -85,4 +85,5 @@ export const store = reactive({
       number: "22",
     },
   },
+  showSection: false,
 });

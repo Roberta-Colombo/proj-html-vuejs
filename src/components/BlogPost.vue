@@ -72,7 +72,7 @@ span {
   height: 45px;
   width: 45px;
   position: absolute;
-  background-color: $blazeorange;
+  background-color: $maincolor;
   color: $sugarcane;
   font-size: 1.2rem;
   text-align: center;

@@ -2,86 +2,146 @@
   <div class="grey-bg py-5">
     <div class="my-container">
       <div class="content">
-        <div class="row pt-3 gx-0">
-          <div class="col-6 ps-0">
-            <!-- ulteriore divisione 50% delle due colonne precedentemente ottenute -->
-            <!-- colonna sx -->
-            <div class="d-flex">
-              <button class="active-btn">Overview</button>
-              <button>Our Mission</button>
-            </div>
+        <div class="d-flex">
+          <button @click="hideSection" :class="{ activebtn: btnActive }">
+            Overview
+          </button>
+          <button @click="showSection" :class="{ activebtn: secondBtnActive }">
+            Our Mission
+          </button>
+        </div>
 
-            <div class="section-intro description">
-              <strong
-                >Our philosophy is learning through play as we offer a
-                stimulating environment for children</strong
-              >
-            </div>
+        <div v-if="!store.showSection">
+          <div class="row pt-3 gx-0">
+            <!-- suddivisione in due colonne (50%) -->
+            <div class="col-6 ps-0">
+              <!-- colonna sx -->
+              <div class="section-intro description">
+                <strong
+                  >Our philosophy is learning through play as we offer a
+                  stimulating environment for children</strong
+                >
+              </div>
 
-            <div class="paragraph pb-4">
-              <div class="row gx-0">
-                <div class="col-4 circle">
-                  <img
-                    src="../assets/img_unzip/clock_alt.png"
-                    alt="Clock icon"
-                  />
+              <div class="paragraph pb-4">
+                <div class="row gx-0">
+                  <div class="col-4 circle">
+                    <img
+                      src="../assets/img_unzip/clock_alt.png"
+                      alt="Clock icon"
+                    />
+                  </div>
+
+                  <div class="col-8">
+                    <div class="title">Full Day Sessions</div>
+                    <div class="caption">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Cupiditate libero fugiat laboriosam.
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <div class="col-8">
-                  <div class="title">Full Day Sessions</div>
-                  <div class="caption">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Cupiditate libero fugiat laboriosam.
+              <div class="paragraph pb-4">
+                <div class="row gx-0">
+                  <div class="col-4 circle">
+                    <img
+                      src="../assets/img_unzip/diagram_alt.png"
+                      alt="Clock icon"
+                    />
+                  </div>
+
+                  <div class="col-8">
+                    <div class="title">Varied Classes</div>
+                    <div class="caption">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Cupiditate libero fugiat laboriosam.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="paragraph pb-4">
-              <div class="row gx-0">
-                <div class="col-4 circle">
+            <!-- Colonna dx (slider) -->
+            <div class="col-6">
+              <div class="slider">
+                <div class="slide">
+                  <button class="slide-btn lft" @click="prevSlide">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </button>
                   <img
-                    src="../assets/img_unzip/diagram_alt.png"
-                    alt="Clock icon"
+                    class="slide-img"
+                    :src="slides[activeIndex].image"
+                    :alt="slides[activeIndex].title"
                   />
+                  <button class="slide-btn rgt" @click="nextSlide">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
                 </div>
 
-                <div class="col-8">
-                  <div class="title">Varied Classes</div>
-                  <div class="caption">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Cupiditate libero fugiat laboriosam.
+                <div class="thumbs">
+                  <div
+                    class="thumb"
+                    :class="index === activeIndex ? 'active' : ''"
+                    v-for="(slide, index) in slides"
+                    :key="index"
+                  >
+                    <img :src="slide.image" alt="{{ slide.title }}" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- colonna dx (slider) -->
-          <div class="col-6">
-            <div class="slider">
-              <div class="slide">
-                <button class="slide-btn lft" @click="prevSlide">
-                  <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <img
-                  class="slide-img"
-                  :src="slides[activeIndex].image"
-                  :alt="slides[activeIndex].title"
-                />
-                <button class="slide-btn rgt" @click="nextSlide">
-                  <i class="fa-solid fa-angle-right"></i>
-                </button>
+        <!-- Compare al click su button "Our Mission" -->
+        <div class="mission-section" v-if="store.showSection">
+          <div class="section-intro description">
+            <strong
+              >Our mission consists in helping kids learning and grow together
+              while having fun</strong
+            >
+
+            <div class="section-img">
+              <img
+                class="section-image"
+                src="../assets/img_unzip/slider_icon2.png"
+                alt="Heart icon"
+              />
+            </div>
+          </div>
+
+          <div class="paragraph pb-4">
+            <div class="row gx-0">
+              <div class="col-4 circle scnd">
+                <img src="../assets/img_unzip/toy.png" alt="Stroller icon" />
               </div>
 
-              <div class="thumbs">
-                <div
-                  class="thumb"
-                  :class="index === activeIndex ? 'active' : ''"
-                  v-for="(slide, index) in slides"
-                  :key="index"
-                >
-                  <img :src="slide.image" alt="{{ slide.title }}" />
+              <div class="col-8">
+                <div class="title alt-title">Extensive Day Care</div>
+                <div class="caption">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cupiditate libero fugiat laboriosam. Lorem ipsum dolor sit,
+                  amet consectetur adipisicing elit. Cupiditate libero fugiat
+                  laboriosam.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="paragraph pb-4">
+            <div class="row gx-0">
+              <div class="col-4 circle scnd">
+                <img src="../assets/img_unzip/meal.png" alt="Stroller icon" />
+              </div>
+
+              <div class="col-8">
+                <div class="title alt-title">Warm Meals Everyday</div>
+                <div class="caption">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cupiditate libero fugiat laboriosam. Lorem ipsum dolor sit,
+                  amet consectetur adipisicing elit. Cupiditate libero fugiat
+                  laboriosam.
                 </div>
               </div>
             </div>
@@ -93,11 +153,16 @@
 </template>
 
 <script>
+import { store } from "../store";
+
 export default {
   name: "SecondSection",
   data() {
     return {
+      store,
       activeIndex: 0,
+      btnActive: true,
+      secondBtnActive: false,
       slides: [
         {
           title: "Girls drawing",
@@ -127,6 +192,16 @@ export default {
         this.activeIndex = 0;
       }
     },
+    showSection() {
+      store.showSection = true;
+      this.btnActive = false;
+      this.secondBtnActive = true;
+    },
+    hideSection() {
+      this.secondBtnActive = false;
+      store.showSection = false;
+      this.btnActive = true;
+    },
   },
 };
 </script>
@@ -138,10 +213,14 @@ export default {
   height: 65px;
   width: 65px;
   border-radius: 50%;
-  background-color: $blazeorange;
+  background-color: $maincolor;
   text-align: center;
   line-height: 60px;
   margin-top: 2rem;
+}
+
+.scnd {
+  background-color: $sugarcane;
 }
 
 .circle img {
@@ -154,7 +233,9 @@ export default {
   font-size: 1.5rem;
   padding: 1.5rem 1rem 1rem;
 }
-
+.alt-title {
+  color: $maincolor;
+}
 .description {
   padding: 2rem 1rem 2rem 0;
 }
@@ -168,8 +249,8 @@ button {
   color: $greytxt;
   margin: 1rem 1rem 1rem 0;
 }
-.active-btn {
-  background-color: $blazeorange;
+.activebtn {
+  background-color: $maincolor;
   border-style: none;
   color: $sugarcane;
   padding: 0.5rem 1rem;
@@ -203,7 +284,7 @@ button {
 .slide-btn {
   position: absolute;
   top: 50%;
-  background-color: $blazeorange;
+  background-color: $maincolor;
   border-style: none;
   color: $sugarcane;
   height: 40px;
@@ -216,6 +297,19 @@ button {
 }
 
 .active {
-  border-bottom: 3px solid $blazeorange;
+  border-bottom: 3px solid $maincolor;
+}
+
+.mission-section {
+  position: relative;
+}
+.section-img {
+  position: absolute;
+  width: 300px;
+  right: 0;
+}
+
+.section-image {
+  width: 100%;
 }
 </style>
