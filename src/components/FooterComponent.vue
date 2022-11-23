@@ -136,6 +136,10 @@ button {
   padding: 0.6rem 1.3rem;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
 .map {
   width: 100%;
   height: 470px;

@@ -66,6 +66,7 @@ export const store = reactive({
       title: "Drawing and Painting Lessons",
       author: "Anna Brown",
       category: "Events, Fun",
+      number: "42",
     },
     second: {
       date: "Ocober 03, 2014",
@@ -73,6 +74,7 @@ export const store = reactive({
       title: "Fall Parents Meeting Day",
       author: "Anna Brown",
       category: "Dance, Education",
+      number: "19",
     },
     third: {
       date: "September 20, 2014",
@@ -80,6 +82,7 @@ export const store = reactive({
       title: "Birthday in Kindergarten",
       author: "Anna Brown",
       category: "Games, General",
+      number: "22",
     },
   },
 });

@@ -112,6 +112,10 @@ button {
   margin-top: 25px;
 }
 
+button:hover {
+  background-color: $butterfly;
+  opacity: 0.7;
+}
 .icon1,
 .icon2 {
   position: absolute;

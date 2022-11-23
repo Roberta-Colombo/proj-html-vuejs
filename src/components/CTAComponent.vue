@@ -37,6 +37,10 @@ button {
   padding: 0.7rem;
 }
 
+button:hover {
+  background-color: $sugarcane;
+  color: $butterfly;
+}
 .cta {
   font-size: 2rem;
 }

@@ -65,6 +65,7 @@ img {
 }
 .mycard-img {
   position: relative;
+  padding: 0;
 }
 .card-info {
   padding-top: 1.5rem;
@@ -91,8 +92,9 @@ button {
   background-color: $blazeorange;
   color: $sugarcane;
   border-style: none;
-  padding: 12px 20px;
-  top: 79%;
-  right: 4%;
+  width: 130px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
 }
 </style>

@@ -1,7 +1,10 @@
 <template>
   <div class="blog-post">
     <div class="date">{{ post.date }}</div>
-    <img class="post-img" :src="post.image" :alt="post.title" />
+    <div class="box-img">
+      <img class="post-img" :src="post.image" :alt="post.title" />
+      <div class="num-square">{{ post.number }}</div>
+    </div>
     <div class="post-title">{{ post.title }}</div>
     <p class="pb-3">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque
@@ -42,6 +45,10 @@ export default {
 .post-img {
   width: 100%;
 }
+
+.box-img {
+  position: relative;
+}
 .date {
   width: 100%;
   color: $greytxt;
@@ -59,5 +66,18 @@ span {
   color: $greytxt;
   font-size: 0.9rem;
   padding-left: 0.8rem;
+}
+
+.num-square {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  background-color: $blazeorange;
+  color: $sugarcane;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 45px;
+  bottom: 0;
+  right: 0;
 }
 </style>
